@@ -1,3 +1,7 @@
+# Flask app that reads roll angle from an MPU6050 sensor via I2C using a complementary filter,
+# dynamically stabilizes a live webcam feed by rotating it in real time, and streams it to a browser.
+# no zooming done -> The frame size grows and shrinks upon rolling
+
 import threading
 import time
 from flask import Flask, Response, jsonify, make_response

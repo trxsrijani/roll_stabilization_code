@@ -1,3 +1,7 @@
+# Flask app for real-time camera feed stabilization using MPU6050 tilt data.
+# Applies angle-based rotation and jitter filtering with a user-adjustable threshold slider.
+# Applied a fixed cropping mechanism, which does give a fixed size output window
+
 from flask import Flask, Response, jsonify, make_response, request
 import smbus
 import math

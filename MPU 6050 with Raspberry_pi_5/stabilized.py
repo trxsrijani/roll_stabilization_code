@@ -1,3 +1,6 @@
+# Live video feed auto-stabilized using MPU6050 IMU tilt data with continuous roll correction.
+# Displays rotation status on screen and supports flipped orientation beyond ±90°.
+
 from flask import Flask, Response, jsonify, make_response
 import smbus
 import math

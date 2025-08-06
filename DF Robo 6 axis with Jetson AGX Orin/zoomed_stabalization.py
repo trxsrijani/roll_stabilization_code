@@ -1,3 +1,7 @@
+# Flask-based web application that reads roll angle from a DFROBOT 6-axis IMU sensor via UART,
+# stabilizes live video feed by counter-rotating frames in real time, and streams it through a browser interface.
+# With Variable Cropping where frame size is stable but we get zoomed feed whenever rolling occurs
+
 import threading
 import time
 from flask import Flask, Response, jsonify, make_response

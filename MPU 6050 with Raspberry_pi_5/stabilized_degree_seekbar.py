@@ -1,3 +1,7 @@
+# Real-time video stabilization app using MPU6050 IMU data with live angle compensation.
+# Adds on-screen rotation status overlay and allows dynamic jitter threshold adjustment via UI slider.
+
+
 from flask import Flask, Response, jsonify, make_response, request
 import smbus
 import math
